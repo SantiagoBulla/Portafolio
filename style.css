@@ -10,8 +10,11 @@ coloque nas sessões indicadas*/
     --bg-color: #EAF2FD;
     --cor-de-fundo: #F5F5F5;
     --title-color: #464646;
+    --title-input: #A2A2A2;
     --cor-de-link: #000;
     --white-color: #FFFFFF;
+    --blue-color: #2A7AE4;
+    --grey-color: #C8C8C8;
 }
 
 body {
@@ -88,6 +91,11 @@ section.title .title__div {
 .title__div .title__profile {
     width: 98px;
     height: 98px;
+    border-radius: 50%;
+}
+
+.title__container {
+    width: 90%;
 }
 
 .title__container .title__bio {
@@ -156,7 +164,7 @@ section.hobbies {
 
 .skills__line .skills__box,
 .hobbies__line .hobbies__box {
-    width: 156px;
+    width: 138px;
     height: 118px;
     align-content: end;
 }
@@ -185,6 +193,7 @@ section.academic {
 .academic__title {
     margin: 0;
     text-align: center;
+    color: var(--title-color);
 }
 
 .academic__courses {
@@ -210,7 +219,7 @@ section.academic {
     background-color: var(--white-color);
 }
 
-.academic__courses__item__img img{
+.academic__courses__item__img img {
     width: 140px;
     height: 80px;
 }
@@ -230,20 +239,205 @@ section.academic {
     width: fit-content;
 }
 
-/* experiencia*/
+/* Experiencia Profesional */
 
-section.experience {}
+section.experience {
+    padding: 32px;
+}
+
+.experience__section__title {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--title-color);
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.experience__container {
+    width: 296px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    margin: 0 auto;
+}
+
+.experience__box {
+    width: 296px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.experience__box .experience__img {
+    width: 100%;
+    height: 144px;
+}
+
+.experience__box .experience__info__container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.experience__info__container .experience__title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--title-color);
+}
+
+.experience__info__container .experience__text {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--title-color);
+}
+
+.experience__description {
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.experience__description .experience__repo a button {
+    border: 1px solid var(--blue-color);
+    background-color: var(--white-color);
+    color: var(--blue-color);
+    padding: 0 16px;
+    font-size: 14px;
+    font-weight: 600;
+    height: 100%;
+    cursor: pointer;
+
+}
+
+.experience__description .experience__demo a button {
+    border: none;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    padding: 0 16px;
+    font-size: 14px;
+    font-weight: 600;
+    height: 100%;
+    cursor: pointer;
+}
+
+.experience__description .experience__repo a button:hover {
+    border: 1px solid none;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+}
+
+.experience__description .experience__demo a button:hover {
+    border: 1px solid var(--blue-color);
+    background-color: var(--white-color);
+    color: var(--blue-color);
+}
 
 /*Contacto*/
 
-section.formcontato {}
+section.formcontato {
+    padding: 32px;
+    background-color: var(--bg-color);
+}
+
+.formcontato__contacto {
+    width: 100%;
+}
+
+.formcontato__esquerda img {
+    display: none;
+}
+
+.formcontato__text {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.formcontato__title {
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--title-color);
+}
+
+.formcontato__subtext {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--title-color);
+}
+
+.formcontato__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.formcontato__form input,
+textarea {
+    height: 56px;
+    background-color: var(--white-color);
+    border: none;
+    border-bottom: 2px solid var(--grey-color);
+    font-size: 16px;
+    color: var(--title-input);
+    padding: 0 12px;
+}
+
+.formcontato__form input:focus,
+.formcontato__form textarea:focus {
+    outline: none;
+    border-bottom: 2.5px solid var(--blue-color);
+}
+
+.formcontato__form textarea {
+    height: 133px;
+    padding-top: 10px;
+    resize: none;
+}
+
+.formcontato__form button {
+    width: 133px;
+    height: 40px;
+    border: none;
+    background-color: var(--blue-color);
+    padding: 12px 16px;
+    color: var(--white-color);
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+}
+
+.formcontato__form button:hover {
+    background-color: var(--white-color);
+    color: var(--blue-color);
+    border: 1px solid var(--blue-color);
+}
 
 /*footeer*/
 
-section.footer {}
+section.footer {
+    padding: 32px;
+    background-color: var(--white-color);
+}
 
-/* Vamos a desafiarnos trabajando con responsividad?
-Utiliza las referencias de los breakpoints @media abajo */
+.footer__rodape {
+    text-align: center;
+}
+
+.footer__rodape p {
+    margin: 0;
+    font-size: 16px;
+    color: var(--title-color);
+    font-weight: 500;
+}
 
 
 /*Tablet*/
@@ -268,7 +462,7 @@ Utiliza las referencias de los breakpoints @media abajo */
     }
 
     .title__div .title__profile {
-        width: 146px;
+        width: 180px;
         height: 146px;
     }
 
@@ -314,13 +508,29 @@ Utiliza las referencias de los breakpoints @media abajo */
     .academic__courses {
         flex-direction: row;
         gap: 16px;
-        border: 1px solid green;
+        margin: 0 auto;
     }
 
     .academic__courses__box .academic__courses__list {
-        width: 224px;
+        width: 223px;
     }
+
     /*Experiencia Profesional*/
+    .experience__container {
+        width: 100%;
+    }
+
+    .experience__box {
+        width: 100%;
+        height: 427px;
+    }
+
+    .experience__box .experience__img {
+        height: 320px;
+    }
+
+
+    /*Contacto y footeer -> No cambian*/
 
 }
 
@@ -376,8 +586,8 @@ Utiliza las referencias de los breakpoints @media abajo */
 
     .title__div .title__profile {
         /*Hero image*/
-        width: 368px;
-        height: 368px;
+        width: 350px;
+        height: 260px;
     }
 
     .title__container .title__bio {
@@ -431,11 +641,123 @@ Utiliza las referencias de los breakpoints @media abajo */
     }
 
     /*Formación Académica*/
+    section.academic {
+        padding: 82px;
+        gap: 32px;
+    }
+
+    .academic__title {
+        font-size: 32px;
+    }
+
+    .academic__courses {
+        width: 1136px;
+        height: 347px;
+    }
+
+    .academic__courses__box {
+        width: 368px;
+    }
+
+    .academic__courses__box .academic__courses__list {
+        width: 100%;
+        height: 100%;
+    }
+
+    .academic__courses__item__img {
+        height: 368px;
+        padding: 16px;
+    }
+
+    .academic__courses__item__img img {
+        width: 190px;
+        height: 130px;
+    }
+
+    .academic__courses__list li h4 {
+        font-size: 22px;
+    }
+
+    .academic__courses__list li p {
+        font-size: 16px;
+    }
 
     /*Experiencia Profesional*/
 
-    /*Contacto*/
+    section.experience {
+        width: 1136px;
+        margin: 0 auto;
+    }
 
-    /*Footer*/
+    .experience__section__title {
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+
+    .experience__box {
+        height: 406px;
+        flex-direction: row;
+    }
+
+    .experience__box:nth-child(even) {
+        flex-direction: row-reverse;
+
+    }
+
+    .experience__box .experience__img {
+        height: 100%;
+        width: 66%;
+    }
+
+    .experience__box .experience__info__container {
+        height: 100%;
+        width: 34%;
+        justify-content: center;
+    }
+
+    .experience__info__container .experience__title {
+        font-size: 22px;
+    }
+
+    .experience__info__container .experience__text {
+        font-size: 16px;
+    }
+
+    .experience__description .experience__repo a button,
+    .experience__description .experience__demo a button {
+        font-size: 16px;
+
+    }
+
+    /*Contacto*/
+    section.formcontato {
+        padding: 64px;
+    }
+
+    .formcontato__contacto {
+        width: 1163px;
+        margin: 0 auto;
+        display: flex;
+        gap: 16px;
+        padding-top: 64px;
+    }
+
+    .formcontato__contacto .formcontato__esquerda {
+        width: 40%;
+    }
+
+    .formcontato__esquerda img {
+        display: block;
+    }
+
+    .formcontato__contacto .formcontato__text {
+        width: 60%;
+    }
+
+    .formcontato__form button {
+        height: 51px;
+    }
+
+    /*Footer -> Nada cambia*/
 
 }
